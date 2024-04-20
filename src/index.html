@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane 2</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            color: white;
+            padding: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-links div {
+            margin: 0 20px;
+        }
+
+        .text-azul:hover {
+            color: whitesmoke;
+        }
+
+        .trailer-image {
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .trailer-image:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="bg-center bg-cover min-h-screen p-0 m-0 flex-col flex" style="background-image: url(./img/blob_s788.png);">
+    <header class="flex h-96 justify-center items-center pl-96 text-pretty ">
+        <img class="pl-7" width="62" height="62" src="https://img.icons8.com/fluency/48/menu--v1.png" alt="menu--v1" />
+        <div class="text-white flex ml-auto justify-between items-center">
+            <button
+                class="bg-azul border-solid border-2 border-black rounded-sm w-48 h-10 mr-14 button">INSCREVA-SE</button>
+            <button
+                class="bg-transparent border-solid border-2 rounded-sm w-48 h-10 mr-32 border-white button">ENTRAR</button>
+        </div>
+    </header>
+    <main class="flex items-center w-screen h-96 justify-center">
+        <div class="text-pretty flex-col pl-96">
+            <h1 class="text-white text-pretty font-bold text-9xl border-none">ARCANE</h1>
+            <h1 class="text-9xl text-pretty text-transparent font-bold" style="-webkit-text-stroke: 2px white;">PARTE 2
+            </h1>
+            <div class="flex">
+                <button
+                    class="bg-azul border-solid border-black border-2 rounded-sm w-48 h-10 mr-14  text-white relative flex items-center justify-center button">
+                    AVISE-ME
+                    <img class="ml-2" width="40" height="40"
+                        src="https://img.icons8.com/carbon-copy/100/000000/bell--v1.png" alt="bell--v1" />
+                </button>
+                <button
+                    class="bg-transparent border-solid border-2 rounded-sm w-44 h-10 mr-32 border-white text-white button">ADICIONAR
+                    NA LISTA</button>
+            </div>
+        </div>
+        <div class="ml-8 flex flex-col justify-center relative">
+            <div class="relative flex items-center justify-center mb-4">
+                <img class="trailer-image border-solid border-4 border-black mr-8" width="350" height="40"
+                    src="/src/img/EN-US_Arcane_Payoff_Horizontal_YT_Banner_2560x1440_RGB_W1.0.jpg" alt="">
+                <img class="play-icon" width="64" height="64" src="https://img.icons8.com/3d-fluency/64/play.png"
+                    alt="play" />
+            </div>
+            <div class="relative flex items-center justify-center">
+                <img class="trailer-image border-solid border-4 border-black ml-8" height="40" width="350"
+                    src="/src/img/LeagueofLegends_ArcaneSeason2_ReleaseSchedule_3.jpg" alt="">
+                <img class="play-icon" width="64" height="64" src="https://img.icons8.com/3d-fluency/64/play.png"
+                    alt="play" />
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-links text-3xl text-white text-pretty border-none" style="-webkit-text-stroke: 0.5px white;">
+            <div>
+                <a class="font-bold text-azul" href="">SOCIAL</a>
+            </div>
+            <div>
+                <a class="text-azul" href="">INSTAGRAM</a>
+            </div>
+            <div>
+                <a class="text-azul" href="">TWITTER</a>
+            </div>
+            <div>
+                <a class="text-azul" href="">FACEBOOK</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
